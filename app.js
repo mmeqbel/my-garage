@@ -69,7 +69,7 @@ return "";
 
 form.addEventListener("submit",formHandler);
 function formHandler(event) {
-    event.preventDefault();
+    
     var carName=event.target.carName.value;
     var carModel=event.target.categoryModel.value;
     var carYear=event.target.years.value;
@@ -80,12 +80,7 @@ function formHandler(event) {
 }
 function saveCar() {
     localStorage.setItem("cars",JSON.stringify(cars));
-    cars=getCars();
-    var root =document.getElementById("dataDiv");
-    // while (root.firstChild) {
-    //     root.removeChild(root.lastChild);
-    // }
-    // mainRender();
+    
 }
 
 /****************************
@@ -116,10 +111,17 @@ function getCars() {
     return cars;
 }
 function mainRender(params) {
-    console.log("fkanfnaksfmks")
-    cars=getCars();
-    for (let index = 0; index < cars.length; index++) {
-        render(cars[index]);  
+    var cars1=getCars();
+    
+    var root =document.getElementById("dataDiv");
+    
+     while (root.firstChild) {
+         root.removeChild(root.lastChild);
+     }
+     console.log(root);
+    
+    for (let index = 0; index < cars1.length; index++) {
+        render(cars1[index]);  
     }  
 }
 mainRender();
