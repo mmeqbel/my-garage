@@ -2,38 +2,43 @@ h1{
     background-color: #4a4a4a;
     font-size: xx-large;
     color: white;
+    height: 70px;
+    margin: 0;
+    text-align: center;
+    padding-top: 16px;
+    margin-bottom: 16px;
     
 }
 *{
     box-sizing: border-box;
 }
+
 body{
+    font-family: 'Roboto Slab', serif;
     margin: 0;
     background-image: url("img/background.jpg");
-    color: white;
+    color: rgb(8, 7, 7);
     font-size: large;
 }
 .formDiv{
+    padding-top: 16px;
     margin-left: 20px;
     padding: 8px;
     background-color:#a3a3a3 ;
     width:30%;
     text-align: center;
+    float: left;
     
 }
 .dataDiv {
-    position: relative;
-    bottom:100px;
+    
     margin-right: 8px;
     padding: 8px;
     background-color:#a3a3a3 ;
-    width:30%;
+    width:50%;
+    text-align: center;
     float: right;
 }
-.dataDiv div{
-
-}
-
 img{
     width: 100px;
     height: 100px;
