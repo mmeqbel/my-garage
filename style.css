@@ -1,0 +1,39 @@
+h1{
+    background-color: #4a4a4a;
+    font-size: xx-large;
+    color: white;
+    
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    background-image: url("img/background.jpg");
+    color: white;
+    font-size: large;
+}
+.formDiv{
+    margin-left: 20px;
+    padding: 8px;
+    background-color:#a3a3a3 ;
+    width:30%;
+    text-align: center;
+    
+}
+.dataDiv {
+    margin-right: 8px;
+    padding: 8px;
+    background-color:#a3a3a3 ;
+    width:30%;
+    float: right;
+}
+
+img{
+    float: left;
+    width: 100px;
+    height: 100px;
+}
+input{
+    margin-top: 16px;
+}
