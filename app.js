@@ -81,7 +81,11 @@ function formHandler(event) {
 function saveCar() {
     localStorage.setItem("cars",JSON.stringify(cars));
     cars=getCars();
-    mainRender();
+    var root =document.getElementById("dataDiv");
+    // while (root.firstChild) {
+    //     root.removeChild(root.lastChild);
+    // }
+    // mainRender();
 }
 
 /****************************
@@ -112,17 +116,13 @@ function getCars() {
     return cars;
 }
 function mainRender(params) {
-    var root =document.getElementById("dataDiv");
-    while (root.firstChild) {
-        root.removeChild(root.lastChild);
-    }
     console.log("fkanfnaksfmks")
-    root.innerHTML=" ";
     cars=getCars();
     for (let index = 0; index < cars.length; index++) {
         render(cars[index]);  
     }  
-}mainRender();
+}
+mainRender();
 
 
 

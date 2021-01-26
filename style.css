@@ -28,12 +28,17 @@ body{
     width:30%;
     float: right;
 }
+.dataDiv div{
+
+}
 
 img{
-    float: left;
     width: 100px;
     height: 100px;
 }
 input{
     margin-top: 16px;
+}
+p{
+    display: inline-block;
 }
